@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219C740F280F1E8800662B9D /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219C740E280F1E8800662B9D /* ChatMessage.swift */; };
+		219C7411280F1F2600662B9D /* ChatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219C7410280F1F2600662B9D /* ChatRowView.swift */; };
 		3954C66D22AB3D10009BB210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C66C22AB3D10009BB210 /* AppDelegate.swift */; };
 		3954C66F22AB3D10009BB210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C66E22AB3D10009BB210 /* SceneDelegate.swift */; };
 		3954C67122AB3D10009BB210 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C67022AB3D10009BB210 /* ContentView.swift */; };
@@ -15,7 +17,7 @@
 		3954C67922AB3D12009BB210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3954C67722AB3D12009BB210 /* LaunchScreen.storyboard */; };
 		3954C68422AB3D12009BB210 /* SwiftUI_ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C68322AB3D12009BB210 /* SwiftUI_ChatTests.swift */; };
 		3954C68F22AB3D12009BB210 /* SwiftUI_ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C68E22AB3D12009BB210 /* SwiftUI_ChatUITests.swift */; };
-		3954C69D22AB51C4009BB210 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C69C22AB51C4009BB210 /* ChatController.swift */; };
+		3954C69D22AB51C4009BB210 /* ChatUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C69C22AB51C4009BB210 /* ChatUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		219C740E280F1E8800662B9D /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		219C7410280F1F2600662B9D /* ChatRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRowView.swift; sourceTree = "<group>"; };
 		3954C66922AB3D10009BB210 /* SwiftUI Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3954C66C22AB3D10009BB210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3954C66E22AB3D10009BB210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +54,7 @@
 		3954C68A22AB3D12009BB210 /* SwiftUI ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI ChatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3954C68E22AB3D12009BB210 /* SwiftUI_ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ChatUITests.swift; sourceTree = "<group>"; };
 		3954C69022AB3D12009BB210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3954C69C22AB51C4009BB210 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		3954C69C22AB51C4009BB210 /* ChatUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219C7409280F1DF400662B9D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				3954C67022AB3D10009BB210 /* ContentView.swift */,
+				219C7410280F1F2600662B9D /* ChatRowView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		219C740A280F1E0300662B9D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3954C66E22AB3D10009BB210 /* SceneDelegate.swift */,
+				3954C66C22AB3D10009BB210 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		219C740B280F1E2300662B9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				219C7409280F1DF400662B9D /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		219C740C280F1E4000662B9D /* Utilitys */ = {
+			isa = PBXGroup;
+			children = (
+				3954C69C22AB51C4009BB210 /* ChatUtility.swift */,
+			);
+			path = Utilitys;
+			sourceTree = "<group>";
+		};
+		219C740D280F1E7C00662B9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				219C740E280F1E8800662B9D /* ChatMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3954C66022AB3D10009BB210 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +147,10 @@
 		3954C66B22AB3D10009BB210 /* SwiftUI Chat */ = {
 			isa = PBXGroup;
 			children = (
-				3954C66C22AB3D10009BB210 /* AppDelegate.swift */,
-				3954C66E22AB3D10009BB210 /* SceneDelegate.swift */,
-				3954C67022AB3D10009BB210 /* ContentView.swift */,
-				3954C69C22AB51C4009BB210 /* ChatController.swift */,
+				219C740C280F1E4000662B9D /* Utilitys */,
+				219C740D280F1E7C00662B9D /* Models */,
+				219C740B280F1E2300662B9D /* Views */,
+				219C740A280F1E0300662B9D /* App */,
 				3954C67222AB3D12009BB210 /* Assets.xcassets */,
 				3954C67722AB3D12009BB210 /* LaunchScreen.storyboard */,
 				3954C67A22AB3D12009BB210 /* Info.plist */,
@@ -202,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "AntiChat, Inc.";
 				TargetAttributes = {
 					3954C66822AB3D10009BB210 = {
@@ -273,7 +319,9 @@
 				3954C66D22AB3D10009BB210 /* AppDelegate.swift in Sources */,
 				3954C66F22AB3D10009BB210 /* SceneDelegate.swift in Sources */,
 				3954C67122AB3D10009BB210 /* ContentView.swift in Sources */,
-				3954C69D22AB51C4009BB210 /* ChatController.swift in Sources */,
+				219C740F280F1E8800662B9D /* ChatMessage.swift in Sources */,
+				219C7411280F1F2600662B9D /* ChatRowView.swift in Sources */,
+				3954C69D22AB51C4009BB210 /* ChatUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +394,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,6 +455,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -443,6 +493,7 @@
 				DEVELOPMENT_TEAM = 86EQKZ2X82;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +514,7 @@
 				DEVELOPMENT_TEAM = 86EQKZ2X82;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
